@@ -7,23 +7,30 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Dependencies
+# Dependencies (Root and Sub-applications)
 node_modules/
+customer-website/node_modules/
+admin-dashboard/node_modules/
 
 # Production builds
 dist/
 dist-ssr/
 build/
 out/
+customer-website/dist/
+admin-dashboard/dist/
 
 # Environment and Credentials
 .env
 .env.*
+.env.local
 *.env
 *.local
 *.pem
 *.key
 *.cert
+credentials.json
+secrets.*
 
 # Editor directories and system files
 .vscode/*
