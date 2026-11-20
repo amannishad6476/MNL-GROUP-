@@ -143,8 +143,8 @@ export default function ProjectsPage() {
                     <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                   </Link>
 
-                  <span className="text-[11px] text-warm-500 font-medium">
-                    Verified Site
+                  <span className="text-[10px] text-warm-400 bg-charcoal-800 px-2.5 py-1 rounded">
+                    Sample Project Blueprint
                   </span>
                 </div>
               </div>

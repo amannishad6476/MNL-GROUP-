@@ -47,7 +47,7 @@ export default function HeroSection() {
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-charcoal-900/80 border border-gold-500/30 text-gold-400 text-xs md:text-sm font-semibold tracking-widest uppercase mb-6 shadow-lg backdrop-blur-md">
             <Sparkles className="w-4 h-4 text-gold-400" />
-            <span>{current.subtitle || "Architectural & Turnkey Construction"}</span>
+            <span>Complete Home Construction, Design & Renovation Solutions</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-extrabold text-warm-50 leading-[1.1] tracking-tight mb-6">
@@ -56,24 +56,24 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-warm-200 text-base sm:text-lg md:text-xl font-light leading-relaxed mb-8 max-w-2xl">
-            {current.description || company.shortDescription}
+            From plot planning and 3D architectural blueprints to turnkey civil construction, luxury interiors, and full home renovation. Choose individual specialized services or complete turnkey living spaces.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 sm:gap-5 mb-12">
             <Link
-              to={current.primaryButtonLink || "/services"}
+              to="/services"
               className="px-7 py-3.5 rounded-xl bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-charcoal-950 font-semibold text-sm tracking-wider uppercase flex items-center gap-2.5 gold-glow-btn transition-all duration-300"
             >
-              <span>{current.primaryButtonText || "Explore Services"}</span>
+              <span>Explore Services</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
 
             <Link
-              to={current.secondaryButtonLink || "/contact"}
+              to="/contact"
               className="px-7 py-3.5 rounded-xl bg-charcoal-900/80 hover:bg-charcoal-850 border border-gold-500/40 hover:border-gold-400 text-warm-100 font-semibold text-sm tracking-wider uppercase flex items-center gap-2.5 backdrop-blur-md transition-all duration-300"
             >
               <PhoneCall className="w-4 h-4 text-gold-400" />
-              <span>{current.secondaryButtonText || "Contact Us"}</span>
+              <span>Get Free Consultation</span>
             </Link>
           </div>
 

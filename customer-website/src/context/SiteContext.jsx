@@ -3,6 +3,7 @@ import {
   initialCompanyInfo,
   initialSocialLinks,
   initialBanners,
+  initialServiceCategories,
   initialServices,
   initialCategories,
   initialGallery,
@@ -11,6 +12,7 @@ import {
   initialProcessSteps,
   initialReviews,
   initialTeam,
+  initialFaqs,
   initialSeo
 } from '../data/initialData';
 
@@ -20,6 +22,7 @@ export function SiteProvider({ children }) {
   const [company] = useState(initialCompanyInfo);
   const [socialLinks] = useState(initialSocialLinks);
   const [banners] = useState(initialBanners);
+  const [serviceCategories] = useState(initialServiceCategories);
   const [services] = useState(initialServices);
   const [categories] = useState(initialCategories);
   const [gallery] = useState(initialGallery);
@@ -28,6 +31,7 @@ export function SiteProvider({ children }) {
   const [processSteps] = useState(initialProcessSteps);
   const [reviews] = useState(initialReviews);
   const [team] = useState(initialTeam);
+  const [faqs] = useState(initialFaqs);
   const [seo] = useState(initialSeo);
 
   return (
@@ -36,6 +40,7 @@ export function SiteProvider({ children }) {
         company,
         socialLinks,
         banners,
+        serviceCategories,
         services,
         categories,
         gallery,
@@ -44,6 +49,7 @@ export function SiteProvider({ children }) {
         processSteps,
         reviews,
         team,
+        faqs,
         seo,
       }}
     >

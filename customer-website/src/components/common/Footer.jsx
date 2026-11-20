@@ -119,7 +119,7 @@ export default function Footer() {
               {services.slice(0, 6).map((service) => (
                 <li key={service.id}>
                   <Link
-                    to="/services"
+                    to={`/services/${service.slug}`}
                     className="text-warm-300 hover:text-gold-400 transition-colors flex items-center gap-2 group"
                   >
                     <ArrowRight className="w-3.5 h-3.5 text-gold-500/50 group-hover:text-gold-400 group-hover:translate-x-1 transition-transform" />
@@ -132,7 +132,7 @@ export default function Footer() {
                   to="/services"
                   className="text-gold-400 text-xs font-semibold uppercase tracking-wider hover:underline inline-block pt-1"
                 >
-                  View All 12 Services &rarr;
+                  View All 13 Categories (A–M) &rarr;
                 </Link>
               </li>
             </ul>

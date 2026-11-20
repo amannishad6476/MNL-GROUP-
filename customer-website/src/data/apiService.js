@@ -9,6 +9,7 @@ import {
   initialCompanyInfo,
   initialSocialLinks,
   initialBanners,
+  initialServiceCategories,
   initialServices,
   initialCategories,
   initialGallery,
@@ -17,6 +18,7 @@ import {
   initialProcessSteps,
   initialReviews,
   initialTeam,
+  initialFaqs,
   initialSeo
 } from './initialData';
 
@@ -52,6 +54,7 @@ export const ApiService = {
   },
 
   // Public Getters (ready to fetch from backend or fallback)
+  getServiceCategories: async () => initialServiceCategories,
   getServices: async () => initialServices,
   getGallery: async () => initialGallery,
   getProjects: async () => initialProjects,
@@ -60,4 +63,5 @@ export const ApiService = {
   getCompanyInfo: async () => initialCompanyInfo,
   getBanners: async () => initialBanners,
   getSocialLinks: async () => initialSocialLinks,
+  getFaqs: async () => initialFaqs,
 };

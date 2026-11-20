@@ -118,8 +118,8 @@ export default function ProjectsSection() {
                     <ArrowRight className="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" />
                   </Link>
 
-                  <span className="text-[11px] text-warm-500">
-                    MNL Turnkey Specification
+                  <span className="text-[10px] text-warm-400 bg-charcoal-800 px-2.5 py-1 rounded">
+                    Sample Project Blueprint
                   </span>
                 </div>
               </div>
